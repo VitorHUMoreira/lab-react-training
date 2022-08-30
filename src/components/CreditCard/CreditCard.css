@@ -1,0 +1,17 @@
+.card-container {
+  border-radius: 8px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.type-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.type-container > img {
+  width: 40px;
+}

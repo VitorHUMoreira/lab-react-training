@@ -1,0 +1,13 @@
+.boxcolor-container {
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  margin-bottom: 10px;
+}
+
+.boxcolor-container > h2 {
+  margin: 0;
+}

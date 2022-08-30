@@ -1,0 +1,15 @@
+.random-container {
+  padding: 0 10px;
+  border: 1px solid black;
+  margin-bottom: 10px;
+}
+
+.random-container > h2 > span:nth-child(1) {
+  color: red;
+}
+.random-container > h2 > span:nth-child(2) {
+  color: blue;
+}
+.random-container > h2 > span:nth-child(3) {
+  color: green;
+}

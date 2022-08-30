@@ -1,0 +1,33 @@
+.idcard-container {
+  display: flex;
+  padding: 10px;
+  border: 1px solid black;
+  margin-bottom: 10px;
+  gap: 10px;
+}
+
+.idcard-picture {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.idcard-infos {
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 2px;
+}
+
+.idcard-infos > h3 {
+  margin: 0;
+  padding: 0;
+}
+
+.idcard-infos > h3 > span {
+  font-weight: lighter;
+  margin: 0;
+  padding: 0;
+}
