@@ -66,7 +66,7 @@ function App() {
           number="0123456789016984"
           expirationMonth={12}
           expirationYear={2019}
-          bank="Itau"
+          bank="C6"
           owner="Firstname Lastname"
           bgColor="#ddbb55"
           color="white"

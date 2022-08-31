@@ -1,15 +1,6 @@
 import './BoxColor.css';
 
 function BoxColor({ r, g, b }) {
-  function colorToHex(color) {
-    let hexadecimal = color.toString(16);
-    return hexadecimal.length === 1 ? '0' + hexadecimal : hexadecimal;
-  }
-
-  function rgbToHex(red, green, blue) {
-    return '#' + colorToHex(red) + colorToHex(green) + colorToHex(blue);
-  }
-
   return (
     <div
       style={{ backgroundColor: `rgb(${r}, ${g}, ${b})` }}
@@ -18,7 +9,9 @@ function BoxColor({ r, g, b }) {
       <h2>
         rgb({r}, {g}, {b})
       </h2>
-      <h2>{rgbToHex(r, g, b)}</h2>
+      <h2>
+        {'#' + ((1 << 24) + (r << 16) + (g << 8) + b).toString(16).slice(1)}
+      </h2>
     </div>
   );
 }
