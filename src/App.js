@@ -133,10 +133,7 @@ function App() {
       <br />
 
       <h2>Iteration 9 - ClickablePicture</h2>
-      <ClickablePicture
-        img="../../assets/images/maxence.png"
-        imgClicked="../../assets/images/maxence-glasses.png"
-      />
+      <ClickablePicture />
       <hr />
       <br />
     </div>
