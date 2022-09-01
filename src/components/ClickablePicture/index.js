@@ -18,12 +18,6 @@ function ClickablePicture({ img, imgClicked }) {
         ) : (
           <img className="max" src={maxGlass} alt=""></img>
         )}
-
-        {/* {image ? (
-          <img className="max" src={img} alt=""></img>
-        ) : (
-          <img className="max" src={imgClicked} alt=""></img>
-        )} */}
       </a>
     </div>
   );
