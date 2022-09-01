@@ -6,10 +6,13 @@ import BoxColor from './components/BoxColor';
 import CreditCard from './components/CreditCard';
 import Rating from './components/Rating';
 import DriverCard from './components/DriverCard';
+import LikeButton from './components/LikeButton';
+import ClickablePicture from './components/ClickablePicture';
 
 function App() {
   return (
     <div className="App">
+      <h2>Iteration 1 - IdCard</h2>
       <IdCard
         lastName="Doe"
         firstName="John"
@@ -27,17 +30,28 @@ function App() {
         birth="1988-05-11"
         picture="https://randomuser.me/api/portraits/women/44.jpg"
       />
+      <hr />
+      <br />
 
+      <h2>Iteration 2 - Greetings</h2>
       <Greetings lang="de">Ludwig</Greetings>
-
       <Greetings lang="fr">François</Greetings>
+      <hr />
+      <br />
 
+      <h2>Iteration 3 - Random</h2>
       <Random min={1} max={6} />
       <Random min={1} max={100} />
+      <hr />
+      <br />
 
+      <h2>Iteration 4 - BoxColor</h2>
       <BoxColor r={255} g={0} b={0} />
       <BoxColor r={128} g={255} b={0} />
+      <hr />
+      <br />
 
+      <h2>Iteration 5 - CreditCard</h2>
       <div className="creditcard-container">
         <CreditCard
           type="Visa"
@@ -51,7 +65,7 @@ function App() {
         />
 
         <CreditCard
-          type="Visa"
+          type="Mastercard"
           number="0123456789010995"
           expirationMonth={3}
           expirationYear={2021}
@@ -72,7 +86,10 @@ function App() {
           color="white"
         />
       </div>
+      <hr />
+      <br />
 
+      <h2>Iteration 6 - Rating</h2>
       <div className="rating-container">
         <Rating>0</Rating>
         <Rating>1.49</Rating>
@@ -81,7 +98,10 @@ function App() {
         <Rating>4</Rating>
         <Rating>5</Rating>
       </div>
+      <hr />
+      <br />
 
+      <h2>Iteration 7 - DriverCard</h2>
       <DriverCard
         name="Travis Kalanick"
         rating={4.2}
@@ -101,6 +121,24 @@ function App() {
           licensePlate: 'BE33ER',
         }}
       />
+      <hr />
+      <br />
+
+      <h2>Iteration 8 - LikeButton</h2>
+      <div className="like-button-container">
+        <LikeButton />
+        <LikeButton />
+      </div>
+      <hr />
+      <br />
+
+      <h2>Iteration 9 - ClickablePicture</h2>
+      <ClickablePicture
+        img="../../assets/images/maxence.png"
+        imgClicked="../../assets/images/maxence-glasses.png"
+      />
+      <hr />
+      <br />
     </div>
   );
 }
