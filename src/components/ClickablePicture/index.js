@@ -12,13 +12,12 @@ function ClickablePicture({ img, imgClicked }) {
 
   return (
     <div>
-      <span className="max" onClick={glasses}>
-        {image ? (
-          <img className="max" src={max} alt=""></img>
-        ) : (
-          <img className="max" src={maxGlass} alt=""></img>
-        )}
-      </span>
+      <img
+        src={image ? max : maxGlass}
+        alt=""
+        onClick={glasses}
+        className="max"
+      />
     </div>
   );
 }
